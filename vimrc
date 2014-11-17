@@ -22,14 +22,12 @@
 "	    => Misc
 "	    => Helper functions
 "       => EOF
-"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vundle
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" be iMproved(vim -u test/vimrc), required
+" Be iMproved(vim -u test/vimrc), required
 set nocompatible
 
 " required
@@ -70,24 +68,19 @@ filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 filetype plugin on
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Brief help
 " :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginInstall    - installs plugins; append `!` to update or just :"PluginUpdate
 " :PluginSearch foo - searches for foo; append `!` to refresh local cache
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
-" see :h vundle for more details or wiki for FAQ
+" See :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" =>Vundle end
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 "Vim-powerline requirement [python-powerline-git]from[AUR]
 let $PYTHONPATH='/usr/lib/python3.4/site-packages'
 
@@ -109,7 +102,6 @@ nmap <leader>w :w!<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
 
@@ -190,7 +182,6 @@ set nobackup
 set nowb
 set noswapfile
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -225,7 +216,6 @@ set linebreak
 
 " Do not highlight the string we searched.
 set nohlsearch 
-
 
 """"""""""""""""""""""""""""""
 " => Visual mode related
@@ -355,7 +345,7 @@ vnoremap <silent> <leader>r :call VisualSelection('replace')<CR>
 "
 " To go to the previous search results do:
 "   <leader>p
-"
+
 map <leader>cc :botright cope<cr>
 map <leader>co ggVGy:tabnew<cr>:set syntax=qf<cr>pgg
 map <leader>n :cn<cr>
