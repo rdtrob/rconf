@@ -21,10 +21,9 @@
 "	    => Spell checking
 "	    => Misc
 "	    => Helper functions
-"       => EOF  
+"       => EOF
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vundle
@@ -88,6 +87,9 @@ filetype plugin on
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"Vim-powerline requirement [python-powerline-git]from[AUR]
+let $PYTHONPATH='/usr/lib/python3.4/site-packages'
 
 " Sets how many lines of history VIM has to remember
 set history=1000
