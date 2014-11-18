@@ -1,12 +1,13 @@
 ###### Personal conf files
 --------------
 Description:
-.vimrc
--
+1. .vimrc
 - vundle
 - YouCompleteMe
 - various indentation, useful mappings and helpful editing tweaks
-.bashrc
--
--
-
+2. .bashrc
+- tmux
+- archey3
+- randpass func
+- 
+//TODO
