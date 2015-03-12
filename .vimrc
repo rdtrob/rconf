@@ -1,7 +1,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Maintainer:
 "       Robert Muschong
-" Site: 
+" Webpage: 
 "       http://robertmuschong.squarespace.com 
 " Github:
 "       http://github.com/robert-cm
@@ -83,6 +83,8 @@ filetype plugin on
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <Esc>[B <Down>
+
 "Vim-powerline requirement [python-powerline-git]from[AUR]
 let $PYTHONPATH='/usr/lib/python3.4/site-packages'
 
@@ -260,10 +262,16 @@ map <leader>bd :Bclose<cr>
 map <leader>ba :1,1000 bd!<cr>
 
 " Useful mappings for managing tabs
+nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>
+nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
+
 map <leader>tn :tabnew<cr>
 map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove
+
+nnoremap <c-j> :tabprevious<CR>
+nnoremap <c-k> :tabnext<CR>
 
 " Opens a new tab with the current buffer's path
 " Super useful when editing files in the same directory
@@ -301,6 +309,9 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ cwd:\ %r%{getcwd()}%h\ \ \ Line:\ 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Editing mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" toggle gundo.vim
+nnoremap <leader>u : GundoToggle<CR>
+
 " Remap VIM 0 to first non-blank character
 map 0 ^
 
@@ -387,6 +398,7 @@ map <leader>pp :setlocal paste!<cr>
 " Mouse can be used everywhere
 set mouse=a
 
+let g:netrw_liststyle=3
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
@@ -437,6 +449,7 @@ function! <SID>BufcloseCloseIt()
    else
      bnext
    endif
+
 
    if bufnr("%") == l:currentBufNum
      new
