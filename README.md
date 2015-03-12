@@ -11,3 +11,4 @@ Description:
 - archey3
 - randpass func
 
+###### Don't just copy the configs if you don't understand what everything does.
