@@ -10,7 +10,7 @@ function randpass() {
       }
 
 # Tmux, pprog
-#tmux
+tmux
 
 # Archey, a system information tool
 archey3
