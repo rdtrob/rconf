@@ -1,4 +1,25 @@
-# Cute shell shortcuts
+#############################################
+# Maintainer:
+#     Robert Muschong
+# Site:
+#     http://robertmuschong.squarespace.com
+# Github:
+#     http://github.com/robert-cm
+# Email:
+#     mcarolrobert@gmail.com
+# 
+# Sections:
+#     => Common shell mistakes
+#     => Make
+#     => SSH
+#     => Git
+#     => Acad
+#     => Bashrc
+#############################################
+
+#############################################
+# => Common shell mistakes
+#############################################
 alias ls='ls --sort=extension --color=auto'
 alias ll='ls -lh'
 alias lal='ls -alh'
@@ -11,29 +32,28 @@ alias grep='grep --color -n'
 alias smi='sudo make install'
 alias l='ls -CF'
 
-# This one is to take care of make
-# Give me a nice, distinguishable make output
-alias make='clear && make'
-alias m='make'
-
-
 # Some more, to avoid mistakes
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
+#############################################
+# => Make
+#############################################
+alias make='clear && make'
+alias m='make'
 
-# SSH Alias
+#############################################
+# => SSH
+#############################################
 alias dcf='ssh rkirti@10.6.16.16'
 alias dcf1='ssh rkirti@10.6.16.10'
 alias dcf2='ssh rkirti@10.6.16.23'
 alias dcfmail='ssh rkirti@10.6.5.215'
 
-
-
-
-
-# Git Commands
+#############################################
+# => Git
+#############################################
 # Add and Commit are used as functions
 alias gpo='git push orig'
 alias gp='git pull'
@@ -43,13 +63,16 @@ alias gr='git-reflog'
 alias glf='git-ls-files'
 
 
-
-# Acad aliases 
+#############################################
+# => Acad
+############################################# 
 alias cs351='cd ~/code/cs351'
 alias cs331='cd ~/code/cs331'
 alias cs370='cd ~/code/cs370'
 
 
-
+#############################################
+# => .bashrc
+#############################################
 # Shortcut to test quick changes to bashrc
 alias reload='source ~/.bashrc'
