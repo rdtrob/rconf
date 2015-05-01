@@ -36,13 +36,13 @@ set nocompatible
 filetype off
 
 " Set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/vundle "Vundle.vim
-"call vundle#begin()
+set rtp+=~/.vim/bundle/Vundle.vim "Vundle.vim
+call vundle#begin()
 " Alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
 " Let Vundle manage Vundle, required
-"Plugin 'gmarik/Vundle.vim'
+Plugin 'gmarik/Vundle.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -61,14 +61,17 @@ set rtp+=~/.vim/bundle/vundle "Vundle.vim
 " Avoid a name conflict with L9
 "Plugin 'user/L9', {'name': 'newL9'}
 " YouCompleteMe Plugin
-"Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
+
+" vim-powerline
+Plugin 'Lokaltog/vim-powerline'
 
 " All of your Plugins must be added before the following line
-"call vundle#end()            " required
-filetype plugin indent on    " required
+call vundle#end()           " required
+filetype plugin indent on   " required
 
 " To ignore plugin indent changes, instead use:
-filetype plugin on
+"filetype plugin on
 
 " Brief help
 " :PluginList       - lists configured plugins
@@ -189,6 +192,10 @@ set noswapfile
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"execute pathogen#infect()
+
+"autocmd vimenter * NERDTree
+
 " Use spaces instead of tabs
 set expandtab
 
@@ -305,6 +312,8 @@ set laststatus=2
 " Format the status line
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ cwd:\ %r%{getcwd()}%h\ \ \ Line:\ %l
 
+" Use 256 colours (Use this setting only if your terminal supports 256 colours)
+set t_Co=256
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Editing mappings
@@ -464,8 +473,8 @@ endfunction
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => YouCompleteMe
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+"let g:ycm_min_num_of_chars_for_completion=1
+let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf = 0
 
 " YouCompleteMe and UltiSnips conflict solution
