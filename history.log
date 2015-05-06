@@ -1,0 +1,47 @@
+    1  sudo pacman -S gnome
+    2  reboot
+    3  exit
+    4  sudo pacman -R gnome
+    5  sudo pacman -R gnome cheese gtk3 gnome-desktop adwaita-icon-theme
+    6  sudo pacman -R gnome cheese gnome-desktop adwaita-icon-theme caribou clutter colord-gtk gcr gjs gnome-bluetooth grilo gtkmm3
+    7  pacman -S xfce4
+    8  sudo pacman -S xfce4
+    9  exit
+   10  sudo pacman -S xf86-video-intel
+   11  reboot 
+   12  ls
+   13  ls
+   14  exit
+   15  ls
+   16  cd ~/.vim/
+   17  ls
+   18  mkdir -p ~/.vim/bundle
+   19  cd ~/.vim/bundle/
+   20  git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+   21  vim
+   22  ls
+   23  clear
+   24  ls
+   25  ll
+   26  alias ll="ls -lahi"
+   27  ll
+   28  vim .zshrc 
+   29  vim /etc/krb5.conf 
+   30  sudo -E vim /etc/krb5.conf 
+   31  sudo -E vim /etc/krb5.conf 
+   32  sudo -E vim /etc/krb5.conf 
+   33  sudo -E vim /etc/krb5.conf 
+   34  kinit rmuschong@firma.lasting.ro
+   35  sudo -E vim /etc/krb5.conf 
+   36  kinit rmuschong@firma.lasting.ro
+   37  sudo -E vim /etc/krb5.conf 
+   38  kinit rmuschong@firma.lasting.ro
+   39  sudo -E vim /etc/krb5.conf 
+   40  kinit rmuschong@firma.lasting.ro
+   41  sudo -E vim /etc/krb5.conf 
+   42  kinit rmuschong@firma.lasting.ro
+   43  sudo -E vim /etc/krb5.conf 
+   44  kinit rmuschong@firma.lasting.ro
+   45  cp /etc/krb5.conf /etc/krb5BAK.conf 
+   46  sudo cp /etc/krb5.conf /etc/krb5BAK.conf 
+   47  history >> history.log
