@@ -45,3 +45,121 @@
    45  cp /etc/krb5.conf /etc/krb5BAK.conf 
    46  sudo cp /etc/krb5.conf /etc/krb5BAK.conf 
    47  history >> history.log
+    1  sudo pacman -S gnome
+    2  reboot
+    3  exit
+    4  sudo pacman -R gnome
+    5  sudo pacman -R gnome cheese gtk3 gnome-desktop adwaita-icon-theme
+    6  sudo pacman -R gnome cheese gnome-desktop adwaita-icon-theme caribou clutter colord-gtk gcr gjs gnome-bluetooth grilo gtkmm3
+    7  pacman -S xfce4
+    8  sudo pacman -S xfce4
+    9  exit
+   10  sudo pacman -S xf86-video-intel
+   11  reboot 
+   12  ls
+   13  ls
+   14  exit
+   15  ls
+   16  cd ~/.vim/
+   17  ls
+   18  mkdir -p ~/.vim/bundle
+   19  cd ~/.vim/bundle/
+   20  git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+   21  vim
+   22  ls
+   23  clear
+   24  ls
+   25  ll
+   26  alias ll="ls -lahi"
+   27  ll
+   28  vim .zshrc 
+   29  vim /etc/krb5.conf 
+   30  sudo -E vim /etc/krb5.conf 
+   31  sudo -E vim /etc/krb5.conf 
+   32  sudo -E vim /etc/krb5.conf 
+   33  sudo -E vim /etc/krb5.conf 
+   34  kinit rmuschong@firma.lasting.ro
+   35  sudo -E vim /etc/krb5.conf 
+   36  kinit rmuschong@firma.lasting.ro
+   37  sudo -E vim /etc/krb5.conf 
+   38  kinit rmuschong@firma.lasting.ro
+   39  sudo -E vim /etc/krb5.conf 
+   40  kinit rmuschong@firma.lasting.ro
+   41  sudo -E vim /etc/krb5.conf 
+   42  kinit rmuschong@firma.lasting.ro
+   43  sudo -E vim /etc/krb5.conf 
+   44  kinit rmuschong@firma.lasting.ro
+   45  cp /etc/krb5.conf /etc/krb5BAK.conf 
+   46  sudo cp /etc/krb5.conf /etc/krb5BAK.conf 
+   47  history >> history.log
+   48  vim history.log 
+   49  history 
+   50  :q
+   51  git init
+   52  git add .
+   53  git add history.log 
+   54  git commig -m "added history.log"
+   55  git commit -m "added history.log"
+   56  git push origin master
+   57  sudo cp /etc/krb5BAK.conf /home/testuser/Downloads/rconf/
+   58  ls
+   59  git add krb5BAK.conf
+   60  git commit -m "added krb5BAK.conf"
+   61  git push origin master
+   62  sudo -E vim /etc/krb5.conf 
+   63  kinit rmuschong@firma.lasting.ro
+   64  sudo -E vim /etc/krb5*
+   65  sudo -E vim /etc/krb5.conf 
+   66  kinit rmuschong@firma.lasting.ro
+   67  sudo -E vim /etc/krb5.conf 
+   68  kinit rmuschong@FIRMA.LASTING.RO
+   69  ls
+   70  sudo cp /etc/krb5.conf /home/testuser/Downloads/rconf/krb5BAK.conf 
+   71  ls
+   72  vim krb5BAK.conf 
+   73  ls
+   74  mv krb5BAK.conf krb5.conf 
+   75  man git
+   76  git remove krb5BAK.conf
+   77  git delete krb5BAK.conf
+   78  git --help
+   79  git rm krb5BAK.conf
+   80  git add krb5.conf 
+   81  git commit -m "added krb5.conf and deleted old BAK"
+   82  git push origin master
+   83  klist 
+   84  vim /etc/samba/smb.conf
+   85  sudo -E vim /etc/samba/smb.conf
+   86  sudo cp /etc/samba/smb.conf /etc/samba/smbBAK.conf
+   87  sudo -E vim /etc/samba/smb.conf
+   88  sudo -E vim /etc/samba/smb.conf
+   89  sudo -E vim /etc/conf.d/samba 
+   90  systemctl start samba.service
+   91  tail /var/log/samba/log.winbindd
+   92  systemctl start smbd.service
+   93  systemctl start nmbd.service
+   94  systemctl start winbindd.service
+   95  tail /var/log/samba/log.winbindd
+   96  net ads join -U rmuschong
+   97  sudo net ads join -U rmuschong
+   98  sudo -E vim /etc/conf.d/samba 
+   99  sudo -E vim /etc/samba/smb.conf
+  100  sudo net ads join -U rmuschong
+  101  history | grep systemctl
+  102  systemctl stop samba.service
+  103  systemctl stop smbd.service
+  104  systemctl stop bnbd.service
+  105  systemctl stop winbindd.service
+  106  systemctl start samba.service
+  107  systemctl start smbd.service
+  108  systemctl start bnbd.service
+  109  systemctl stop nmbd.service
+  110  systemctl start nmbd.service
+  111  systemctl start winbindd.service
+  112  sudo net ads join -U rmuschong
+  113  sudo -E vim /etc/resolv.conf
+  114  sudo -E vim /etc/ntp.conf 
+  115  sudo -E vim /etc/krb5.conf 
+  116  history
+  117  :q
+  118  history >> history.log 
