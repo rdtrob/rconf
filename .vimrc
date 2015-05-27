@@ -192,6 +192,16 @@ set noswapfile
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" always show line numbers, but only in current window. use :vsp
+then Ctrl+W and HL to move between frames
+set number
+:au WinEnter * :setlocal number
+:au WinLeave * :setlocal nonumber
+
+" Automatically resize vertical splits
+:au WinEnter * :set winfixheight
+:au WinEnter * :wincmd =
+
 "execute pathogen#infect()
 
 "autocmd vimenter * NERDTree
@@ -215,9 +225,6 @@ set tw=500
 set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
-
-" Show line numbers
-set number
 
 " As much as possible, show last line in display
 set display=lastline
