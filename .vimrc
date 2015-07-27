@@ -48,7 +48,7 @@ Plugin 'gmarik/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 
 " Plugin on GitHub repo
-"Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 " Plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -57,12 +57,11 @@ Plugin 'gmarik/Vundle.vim'
 "Plugin 'file:///home/robert/.vim/bundle/pluginName'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
-"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Avoid a name conflict with L9
 "Plugin 'user/L9', {'name': 'newL9'}
 " YouCompleteMe Plugin
 Plugin 'Valloric/YouCompleteMe'
-
 " vim-powerline
 Plugin 'Lokaltog/vim-powerline'
 
@@ -192,8 +191,7 @@ set noswapfile
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" always show line numbers, but only in current window. use :vsp
-then Ctrl+W and HL to move between frames
+" always show line numbers, but only in current window. use :vsp then Ctrl+W and HL to move between frames
 set number
 :au WinEnter * :setlocal number
 :au WinLeave * :setlocal nonumber
@@ -476,12 +474,11 @@ function! <SID>BufcloseCloseIt()
    endif
 endfunction
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => YouCompleteMe
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "let g:ycm_min_num_of_chars_for_completion=1
-let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf = 0
 
 " YouCompleteMe and UltiSnips conflict solution
