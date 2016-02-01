@@ -1,5 +1,16 @@
+############################################
+# Maintainer:
+#     Robert Muschong
+# Site:
+#     http://robertmuschong.squarespace.com
+# Github:
+#     github.com/robert-cm
+# Email:
+#     robert.muschong@gmail.com
+############################################
+
 # Path to your oh-my-zsh installation.
-export ZSH=/home/robertm/.oh-my-zsh
+export ZSH=/home/rmuschong/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -47,6 +58,9 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git tmux)
 
+plugins+=(zsh-completions)
+autoload -U compinit && compinit
+
 # User configuration
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
@@ -79,6 +93,8 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+
+source $HOME/.alias
 
 #bindkey '^[[1;5C' emacs-forward-word
 #bindkey '^[^[[D' emacs-backward-word
