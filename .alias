@@ -1,0 +1,91 @@
+#############################################
+# Maintainer:
+#     Robert Muschong
+# Site:
+#     http://robertmuschong.squarespace.com
+# Github:
+#     http://github.com/robert-cm
+# Email:
+#     robert.muschong@gmail.com
+# 
+# Sections:
+#     => Common shell mistakes
+#     => Make
+#     => SSH
+#     => Git
+#     => Easy Access
+#     => Zshell
+#     => ccrypt
+#############################################
+
+#############################################
+# => Common shell mistakes
+#############################################
+alias ls='ls --sort=extension --color=auto'
+alias ll='ls -lh'
+alias lal='ls -alh'
+alias la='ls -A'
+alias pms='sudo pm-suspend'
+alias psg='ps -A | grep'
+#alias se='sudo gvim'
+#alias e='gvim'
+alias grep='grep --color -n'
+alias smi='sudo make install'
+#alias l='ls -CF'
+
+# Some more, to avoid mistakes
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+
+#############################################
+# => Make
+#############################################
+alias makepkg='clear && makepkg'
+alias mkpkg='makepkg'
+
+
+#############################################
+# => SSH
+#############################################
+# Add bash aliases.
+if [ -f ~/.alias_ssh ]; then
+    source ~/.alias_ssh
+    fi
+
+
+#############################################
+# => Git
+#############################################
+# Add and Commit are used as functions
+alias gpo='git push orig'
+alias gp='git pull'
+alias gs='git status'
+alias gd='git-diff'
+alias gr='git-reflog'
+alias glf='git-ls-files'
+
+
+#############################################
+# => Easy access
+############################################# 
+alias vimcmd='vim ~/data/cmds.cpp'
+alias data='cd /home/rmuschong/data && ls'
+
+
+#############################################
+# => .zshrc
+#############################################
+# Shortcut to test quick changes to zshrc
+alias reload='source ~/.zshrc'
+
+
+#############################################
+# => .ccrypt
+#############################################
+alias pwenc='ccencrypt ~/.passwd'
+alias pwdec='ccdecrypt ~/.passwd'
+#ccat ~/.passwd
+alias cmden='ccencrypt ~/data/cmds.cpp'
+alias cmdec='ccdecrypt ~/data/cmds.cpp'
