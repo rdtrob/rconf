@@ -1,6 +1,12 @@
 # Custom #
 ##########
 .alias_ssh
+cmds.cpp
+.passwd.cpt
+.passwd
+.fonts
+.openvpn
+.ssh
 
 # Compiled source #
 ###################

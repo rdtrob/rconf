@@ -16,6 +16,7 @@
 #     => Easy Access
 #     => Zshell
 #     => ccrypt
+#     => vpn
 #############################################
 
 #############################################
@@ -59,7 +60,7 @@ if [ -f ~/.alias_ssh ]; then
 # => Git
 #############################################
 # Add and Commit are used as functions
-alias gpo='git push orig'
+alias gpo='git push origin'
 alias gp='git pull'
 alias gs='git status'
 alias gd='git-diff'
@@ -86,6 +87,20 @@ alias reload='source ~/.zshrc'
 #############################################
 alias pwenc='ccencrypt ~/.passwd'
 alias pwdec='ccdecrypt ~/.passwd'
-#ccat ~/.passwd
+#ccat ~/.passwd.cpt
+alias pwccat='ccat ~/.passwd.cpt | grep '
 alias cmden='ccencrypt ~/data/cmds.cpp'
 alias cmdec='ccdecrypt ~/data/cmds.cpp'
+
+
+############################################
+# => Shutdown && crypt files
+############################################
+alias shutd='ccencrypt ~/.passwd && shutdown'
+
+
+############################################
+# => vpn 
+############################################
+alias ovpne='cd ~/.openvpn/gateway-udp-34447-rmuschong-vpn/ && sudo openvpn --config ~/.openvpn/gateway-udp-34447-rmuschong-vpn/gateway-udp-34447-rmuschong-vpn.ovpn'
+alias ovpnh='cd ~/.openvpn/pfsense-udp-1194-rmabtfvpn-robert/ && sudo openvpn --config ~/.openvpn/pfsense-udp-1194-rmabtfvpn-robert/pfsense-udp-1194-rmabtfvpn-robert.ovpn && cd ~'
