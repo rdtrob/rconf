@@ -1,16 +1,5 @@
-############################################
-# Maintainer:
-#     Robert Muschong
-# Site:
-#     http://robertmuschong.squarespace.com
-# Github:
-#     github.com/robert-cm
-# Email:
-#     robert.muschong@gmail.com
-############################################
-
 # Path to your oh-my-zsh installation.
-export ZSH=/home/rmuschong/.oh-my-zsh
+  export ZSH=/home/rmuschong/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -21,8 +10,12 @@ ZSH_THEME="gentoo"  #robbyrussell
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
 # Uncomment the following line to disable bi-weekly auto-update checks.
-#DISABLE_AUTO_UPDATE="true"
+# DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -34,7 +27,7 @@ ZSH_THEME="gentoo"  #robbyrussell
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
@@ -56,14 +49,11 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git tmux)
-
-plugins+=(zsh-completions)
-autoload -U compinit && compinit
+plugins=(git)
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+  export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -92,19 +82,16 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#
 
 source $HOME/.alias
 
-#bindkey '^[[1;5C' emacs-forward-word
-#bindkey '^[^[[D' emacs-backward-word
 export EDITOR='vim'
 
 #tmux, terminal multiplexer
 if [ "$TMUX" = "" ]; then tmux; fi
 
 #archey3, info tool
-if [ "$ARCHEY3" = "" ]; then archey3; fi
+if [ "$ARCHEY" = "" ]; then archey; fi
 
 #tmux
 #archey3
