@@ -89,12 +89,13 @@ alias pwenc='openssl enc -aes-256-cbc -in /data/devel/rconf/.passwd -out /data/d
 #alias pwenc='ccrypt -e /data/devel/rconf/.passwd'
 alias pwdec='openssl enc -aes-256-cbc -d -in /data/devel/rconf/.passwd.cpt > /data/devel/rconf/.passwd && rm -rf /data/devel/rconf/.passwd.cpt'
 #alias pwdec='ccrypt -d /data/devel/rconf/.passwd.cpt'
+alias pwcat='ccat /data/devel/rconf/.passwd.cpt grep '
 
-alias pwcat='ccat /data/devel/rconf/.passwd.cpt'
-#ccat ~/.passwd.cpt
-#alias pwccat='ccat ~/.passwd.cpt | grep '
 alias cmden='ccencrypt /data/devel/rconf/cmds.cpp'
-alias cmdec='ccdecrypt /data/devel/rconf/cmds.cpp'
+alias cmdec='ccdecrypt /data/devel/rconf/cmds.cpp.cpt'
+
+alias cnfen='cd /data/devel/ && tar cz rconf | openssl enc -aes-256-cbc -out rconf.tar.gz'
+alias cnfdec='cd /data/devel/ && openssl enc -aes-256-cbc -d -in rconf.tar.gz | tar xz'
 
 ############################################
 # => Shutdown && crypt files
