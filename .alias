@@ -85,19 +85,21 @@ alias reload='source ~/.zshrc'
 #############################################
 # => .ccrypt
 #############################################
-alias pwenc='ccencrypt ~/.passwd'
-alias pwdec='ccdecrypt ~/.passwd'
-#ccat ~/.passwd.cpt
-alias pwccat='ccat ~/.passwd.cpt | grep '
-alias cmden='ccencrypt ~/data/cmds.cpp'
-alias cmdec='ccdecrypt ~/data/cmds.cpp'
+alias pwenc='openssl enc -aes-256-cbc -in /data/devel/rconf/.passwd -out /data/devel/rconf/.passwd.cpt && rm -rf /data/devel/rconf/.passwd'
+#alias pwenc='ccrypt -e /data/devel/rconf/.passwd'
+alias pwdec='openssl enc -aes-256-cbc -d -in /data/devel/rconf/.passwd.cpt > /data/devel/rconf/.passwd && rm -rf /data/devel/rconf/.passwd.cpt'
+#alias pwdec='ccrypt -d /data/devel/rconf/.passwd.cpt'
 
+alias pwcat='ccat /data/devel/rconf/.passwd.cpt'
+#ccat ~/.passwd.cpt
+#alias pwccat='ccat ~/.passwd.cpt | grep '
+alias cmden='ccencrypt /data/devel/rconf/cmds.cpp'
+alias cmdec='ccdecrypt /data/devel/rconf/cmds.cpp'
 
 ############################################
 # => Shutdown && crypt files
 ############################################
 alias shutd='ccencrypt ~/.passwd && shutdown'
-
 
 ############################################
 # => vpn 

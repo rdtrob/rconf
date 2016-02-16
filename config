@@ -173,8 +173,9 @@ bindsym $mod+shift+v exec virt-manager
 assign [class="chromium"] $workspace4
 assign [class="Terminator"] $workspace1
 assign [class="Skype"] $workspace10
-#assign [class="Pavucontrol"] $workspace8
-assign [class="Blueman-manager"] $workspace7
+assign [class="Pavucontrol"] $workspace6
+assign [class="Blueman-manager"] $workspace6
+assign [class="Virt-manager"] $workspace2
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
