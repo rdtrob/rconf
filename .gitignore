@@ -7,6 +7,7 @@ cmds.cpp
 .fonts
 .openvpn
 .ssh
+*.cpt
 
 # Compiled source #
 ###################
